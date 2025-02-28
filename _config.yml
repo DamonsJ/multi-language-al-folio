@@ -92,6 +92,9 @@ blog_description: a simple whitespace theme for academics
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
+programming_name: programming # programming_name will be displayed in your programming page
+programming_description: a simple whitespace theme for programming
+
 # Pagination
 pagination:
   enabled: true
@@ -145,6 +148,11 @@ newsletter:
 
 collections:
   books:
+    output: true
+  programming:
+    defaults:
+      layout: post
+    permalink: /:collection/:year/:title/
     output: true
   news:
     defaults:
@@ -267,6 +275,7 @@ jekyll-archives:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
 display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
+programming_tags: ["c++", "rust", "python"]
 display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
