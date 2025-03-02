@@ -150,8 +150,6 @@ collections:
   books:
     output: true
   programming:
-    defaults:
-      layout: post
     output: true
   news:
     defaults:
