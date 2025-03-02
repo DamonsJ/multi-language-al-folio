@@ -152,7 +152,6 @@ collections:
   programming:
     defaults:
       layout: post
-    permalink: /:collection/:year/:title/
     output: true
   news:
     defaults:
